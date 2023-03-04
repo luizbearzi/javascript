@@ -21,9 +21,27 @@
     <h1>Olá, Mundo!</h1> <!--Comentário em HTML-->
     <p>Já me livrei da maldição...</p>
     <script>
+<<<<<<< HEAD
         var nome = window.prompt('Qual é seu nome?') // vai perguntar o nome...(Comentário em Javascript) e
          /* esse tbm é comentário em javascript */
         window.alert('É um grande prazer em te conhecer, ' + nome + '!') // concatenação
+=======
+        window.alert('Minha primeira mensagem!') /* no JavaScript não é obrigatório o ponto  e virgula (;) */
+        window.confirm('Está gostando de JS') // janela com botão ok e cancelar
+        window.prompt('Qual é seu nome?') // vai perguntar o nome
+        //----------------
+        var n1 = Number.parseInt(window.prompt('escreva um número:'))
+        var n2 = Number.parseInt(window.prompt('escreva outro número:'))
+        var soma = n1 + n2
+        window.alert('A soma dos valores é ' + soma)
+        var nome = 'Luiz'
+        var outronome = window.prompt('Informe outro nome:')
+        document.writeln(nome)
+        document.write(`Meu nome tem ${nome.length} letras`)
+        document.write(`Meu nome é maiúculo é ${nome.toLocaleUpperCase()}`)
+        document.write(`Meu nome em minúsculo é ${nome.toLocaleLowerCase()}`)
+        document.write(`Meu outro nome é ${outronome}`)
+>>>>>>> 6b3a7a81150cbbbf1df10d7cb22830a36feb49dd
     </script>
 </body>
 </html>
