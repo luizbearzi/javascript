@@ -19,16 +19,16 @@
     <p>Apredendendo a usar o <strong>DOM</strong> em JavaScript</p>
     <div id="msg">Clique em mim</div>
     <script>
+        window.document.write(window.document.URL)
         var corpo = window.document.body
-        var p1 = window.document.getElementsByTagName('p')[0]
-        var d = window.document.getElementsByName('msg')[0]
-
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: ' + p1.innerHTML)
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
         var d = window.document.querySelector('div#msg')
-      
-        d.style.color = 'blue'
-
-
-        
+        d.innerText = 'Estou aguardando'
+        p1.style.color = 'orange'
+        corpo.style.color = 'pink'
     </script>
 </body>
 </html>
