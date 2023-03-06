@@ -21,20 +21,23 @@
     </script>
 -->
 <h1>Brasieliro ou Estrangeiro</h1>
-    Informe seu país de origem: <input type="text" name="txtvel" id="txtvel">
+    Informe seu país de origem: <input type="text" name="txtnac" id="txtnac">
+
     <input type="button" value="Verificar" onclick="Verificar()">
-    <div id="resultado">Você é ...</div>
+
+    <div id="verificado">Você é Brasileiro ou Estrangeiro?</div>
+
     <script>
         function Verificar() {  
-            var txtv = window.document.getElementById('txtvel')
-            var res = window.document.getElementById('resultado')
-            var vel = txtv.value
-            res.innerHTML = `Seu pais é o(a) <strong>${vel}</strong>`
-            res.innerHTML += '<p>Abaixo veja se você é Brasileiro ou Estrangeiro</p>'
-            if ( vel == 'Brasil') {
-                res.innerHTML += ('Você é  <strong>Brasileiro</strong>')
+            var txnac = window.document.getElementById('txtnac')
+            var verif = window.document.getElementById('verificado')
+            var nac = txnac.value
+            verif.innerHTML = `Seu pais é o(a) <strong>${nac}</strong>`
+            verif.innerHTML += '<p>Abaixo veja se você é Brasileiro ou Estrangeiro</p>'
+            if ( nac == 'Brasil') {
+                verif.innerHTML += ('Você é  <strong>Brasileiro</strong>')
             } else {
-                res.innerHTML += ('Você é estrangeiro')
+                verif.innerHTML += ('Você é estrangeiro')
             }          
         }
     </script>
