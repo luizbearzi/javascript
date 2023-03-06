@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 100px;
+        }
+        div#campo-nome {
+            background-color: blueviolet;
+            width: 100vw;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+        div#campo-soma {
+            background-image: linear-gradient(to right, rgb(228, 96, 96), black);
+            color: white;
+            width: 100vw;
+            height: 180px;
+            line-height: 50px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+
+        div#campo-divisao {
+            background-image: linear-gradient(to left, rgb(70, 194, 122), black);
+            color: white;
+            width: 100vw;
+            height: 180px;
+            line-height: 50px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="campo-nome">
+        <label for="inome">Informe seu nome:</label>
+        <input type="text" name="nome" id="inome">
+    </div>
+    <div id="campo-soma">
+        <h1>Somando Valores</h1>
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Somar" onclick="somar()">
+        <div id="ressoma">Resultado</div>
+    </div>
+    <div id="campo-divisao">
+        <h1>Dividindo Valores</h1>
+        <input type="number" name="numb1" id="numb1">
+        <input type="number" name="numb2" id="numb2">
+        <input type="button" value="Dividir" onclick="dividir()">
+        <div id="resdiv">Resultado</div>
+    </div>
+    <script>
+        function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var ressoma = window.document.getElementById('ressoma')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            ressoma.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+
+        function dividir() {
+            var dv1 = window.document.getElementById('numb1')
+            var dv2 = window.document.getElementById('numb2')
+            var resdiv = window.document.getElementById('resdiv')
+            var d1 = Number(dv1.value)
+            var d2 = Number(dv2.value)
+            var sd = d1 / d2
+            resdiv.innerHTML = `A divisão entre ${d1} e ${d2} é igual a ${sd}`
+        }
+    </script>
+</body>
+</html>
