@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Nacionalidade</title>
+</head>
+<body>
+    <!--<h1>Brasileiro ou Estrangeiro</h1>
+    Informe seu país de origem: <input type="text" name="naciotxt" id="naciotxt">
+    <input type="button" value="Verificar" onclick="nacionalidade()">
+    <div id="nacio">Sua nacionalidade é</div>
+    <script>
+        function nacionalidade() {
+            var txnac = window.document.getElementById('naciotxt') 
+            var nacio = window.document.getElementById('nacio)')
+            var nac = txnac.value
+            nacio.innerHTML = `Sua nacionalidade é ${nac}`     
+        }
+    </script>
+-->
+<h1>Brasieliro ou Estrangeiro</h1>
+    Informe seu país de origem: <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="Verificar()">
+    <div id="resultado">Você é ...</div>
+    <script>
+        function Verificar() {  
+            var txtv = window.document.getElementById('txtvel')
+            var res = window.document.getElementById('resultado')
+            var vel = txtv.value
+            res.innerHTML = `Seu pais é o(a) <strong>${vel}</strong>`
+            res.innerHTML += '<p>Abaixo veja se você é Brasileiro ou Estrangeiro</p>'
+            if ( vel == 'Brasil') {
+                res.innerHTML += ('Você é  <strong>Brasileiro</strong>')
+            } else {
+                res.innerHTML += ('Você é estrangeiro')
+            }          
+        }
+    </script>
+</body>
+</html>
