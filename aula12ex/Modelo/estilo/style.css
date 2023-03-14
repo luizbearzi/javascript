@@ -18,21 +18,29 @@ section {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
           
 }
-/*
-div#div1 {
-    margin-top: 20px;
-    width: 80vw;
-    height: 150px;
-    background-color: bisque;
-        }
 
-div#div2 {
-    margin-top: 20px;
-    width: 80vw;
-    height: 150px;
-    background-color: bisque;
+div#altura-peso {
+    text-align: center;
+    margin: auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: chocolate;
 }
-*/
+
+div#imc > table {
+    margin: auto;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+div#resultado {
+    text-align: center;
+}
+
+div#imc > table tr td {
+    text-align: center;
+}
+
 footer {
 font-style: italic;    text-align: center;
     color: white;
